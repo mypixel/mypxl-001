@@ -1,0 +1,169 @@
+html,
+body{
+	margin: 0;
+	padding: 0;
+	font-size: 16px;
+	font-size: calc( 16px + .4vw );
+}
+
+*{
+	box-sizing: border-box;
+}
+
+img{
+	max-width: 100%;
+	height: auto;
+}
+
+body{
+	font-family: 'Roboto', sans-serif;
+	color: #444;
+	background: #d0d0d0;
+}
+
+.page{
+	background-image: url(../images/bg.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: left top;
+	text-align: center;
+	height: 100vh;
+	width: 100vw;
+}
+
+.wrap{
+	width: 90%;
+	max-width: 48rem;
+	margin: 0 auto;
+	padding: 4rem 0;
+}
+
+h1,h2,h3,h4,h5,h6{
+	line-height: 1.2;
+	margin: 1.25em 0 .25em;
+}
+
+h1{
+}
+
+h1{
+	font-size: 2.2rem;
+}
+
+h2{
+	font-size: 1.8rem;
+}
+
+h3{
+	font-size: 1.5rem;
+}
+
+p,
+.deets{
+	font-size: 1rem;
+	line-height: 1.5;
+	color: #333;
+	margin: .5rem auto;
+}
+
+
+	.deets span{
+		max-width: 120px;
+	}
+
+
+.lead{
+	font-size: calc( 1em + 1vw );
+}
+
+
+ul{
+	margin: 0 0 2em 0;
+	list-style-type: none;
+	padding: 0 0 .5em;
+	width: 75%;
+	margin-left: 12.5%;
+}
+	li{
+		font-size: .9em;
+		font-size: calc( .75em + .5vw );
+		line-height: 1.1;
+		color: #555;
+		margin: 0 0 .5em;
+	}
+		li::before{
+			content: '\2022';
+			color: #efefef;
+			margin-right: 4px;
+		}
+
+a{
+	color: #333;
+	text-decoration: none;
+	position: relative;
+	-webkit-transition: color 150ms ease-in-out 150ms;
+	transition: color 150ms ease-in-out 150ms;
+}
+	a::after{
+		content: '';
+		background: #78c7e4;
+		height: 3px;
+		position: absolute;
+		left: 0;
+		right: 0;
+		bottom: -1px;
+		-webkit-transition: all 150ms ease-in-out 150ms;
+		transition: all 150ms ease-in-out 150ms;
+	}
+
+
+a:hover{
+	color: white;
+	z-index: 2;
+
+}
+	a:hover::after{
+		background: #026e96;
+		height: calc( 1em + 5px );
+		z-index: -1;
+	}
+
+
+
+small{
+	color: #777;
+	font-size: .625em;
+	border-top: 1px solid #999;
+    padding: 1em 2em 0;
+    margin: 2em;
+    display: inline-block;
+}
+
+
+#logo{
+	width: 17rem;
+	display: inline-block;
+}
+
+del{
+	opacity: .7;
+}
+
+ins{
+	text-decoration: none;
+}
+
+
+abbr{
+	position: relative;
+}
+	abbr::after{
+		content: '';
+		background: #b3b3b3;
+		height: 6px;
+		position: absolute;
+		left: 0;
+		right: 0;
+		bottom: 3px;
+		z-index: -1;
+	}
